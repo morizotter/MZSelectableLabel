@@ -78,6 +78,11 @@
     return self;
 }
 
+- (void)setNumberOfLines:(NSInteger)numberOfLines {
+    [super setNumberOfLines:numberOfLines];
+    self.textContainer.maximumNumberOfLines = numberOfLines;
+}
+
 // Common initialisation. Must be done once during construction.
 - (void)setupTextSystem
 {
